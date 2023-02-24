@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tema5;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author java
+ */
+public class ejercicio5_10 {
+
+    public static void main(String[] args) {
+
+    }
+
+    public static int[] sinMayores(int t[], int valor) {
+        int copia [] = Arrays.copyOf(t,t.length);
+        int i = 0;
+        
+        while (i < copia.length) {
+            if (copia[i] > valor) {
+                copia[i] = copia[copia.length - 1];
+                copia = Arrays.copyOf(copia, copia.length - 1);
+            } else {
+                i++;
+            }
+        }
+        
+        return copia;
+    }
+
+}
