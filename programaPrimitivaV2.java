@@ -1,22 +1,25 @@
-package javaapplication19;
+package tema5;
 
+/**
+ * Importamos la clase 'Arrays' y 'Scanner'
+ */
 import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ * Programa que simula una jugada a "La Primitiva", donde podremos elegir la
+ * longitud de nuestro boleto (apuesta[]), cuyo boleto ganador
+ * (primitivaGanador[]), se genera aleatoriamente entre [1 - 50] y los compara
+ * uno a uno, mostrando los numeros comparados por pantalla, y realizando tanto
+ * como un conteo de aciertos de nuestro boleto como un nuevo array con los
+ * numeros que hemos acertado del boleto ganador
  *
  * @author java
  */
-public class JavaApplication19 {
+public class ejercicio5_6 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        int apuestaJugador[] = new int[pedirLongitudPrimitiva()];
-        int primitivaGanadora[] = new int[apuestaJugador.length];
-        rellenarApuesta(apuestaJugador, primitivaGanadora);
-        System.out.print("\nNumeros de aciertos en la primitiva: " + primitiva(apuestaJugador, primitivaGanadora) + "\n");
+        juego();
     }
 
     /**
@@ -118,6 +121,16 @@ public class JavaApplication19 {
                 apuesta[i] = sc.nextInt();
                 /*Si el numero esta fuera del rango volvemos a pedirlo con un
                 mensaje adicional*/
+                           while (busquedaRepetidos < primitivaGanadora.length
+                    && primitivaGanadora[busquedaRepetidos] != numeroAleatorio) {
+                busquedaRepetidos++;
+            }
+            /*Comprobamos si el numero se encuentra, y si se encuentra */
+            if (busquedaRepetidos < primitivaGanadora.length) {
+                i--;
+            } else {
+                primitivaGanadora[i] = numeroAleatorio;
+            }
                 if (apuesta[i] < 0 || apuesta[i] > 50) {
                     System.out.println("Numero fuera de los parametros, \nParametros: [0 - 50]");
                 }
@@ -129,26 +142,31 @@ public class JavaApplication19 {
 
     /**
      * Metodo que rellena el array de los numeros ganadores de la primitiva de
-     * forma aleatoria con los numeros dentro de los rangos [0 - 50]
+     * forma aleatoria con los numeros dentro de los rangos [0 - 50], sin que
+     * sean numeros repetidos
      *
      * @param primitivaGanadora
      * @return primitivaGanadora
      */
     public static int[] rellenarPrimitiva(int primitivaGanadora[]) {
         //Recorre desde el la posicion 0 hasta la ultima del array primitivaGanadora
-        int contador = 0;
         for (int i = 0; i < primitivaGanadora.length; i++) {
-            /*Usamos Math.random() * final + inicial para generar 
-            numeros aleatorios dentro del rango [1 -50]
-             */
-            primitivaGanadora[i] = (int) (Math.random() * 8);
-            Arrays.sort(primitivaGanadora);
-            if ( i == 0) {
-                
-            } else if(primitivaGanadora[i] == primitivaGanadora[i - 1] || i == 0) {
-                
+            int numeroAleatorio = (int) (Math.random() * 49);
+            int busquedaRepetidos = 0;
+            /* Comprobamos posicion por posicion que el numero no se encuentra 
+            en el propio array meidnate posicion por posicion, siendo igual a la
+            longitud del array cuando no se ha encontrado el numero que 
+            queremos comprobar*/
+            while (busquedaRepetidos < primitivaGanadora.length
+                    && primitivaGanadora[busquedaRepetidos] != numeroAleatorio) {
+                busquedaRepetidos++;
             }
-            contador++;
+            /*Comprobamos si el numero se encuentra, y si se encuentra */
+            if (busquedaRepetidos < primitivaGanadora.length) {
+                i--;
+            } else {
+                primitivaGanadora[i] = numeroAleatorio;
+            }
         }
         /*Imprimimos el array de la primitiva ganadora para una mejor 
         visualizacion y comprension del programa
@@ -156,6 +174,85 @@ public class JavaApplication19 {
         Arrays.sort(primitivaGanadora);
         System.out.println("        " + Arrays.toString(primitivaGanadora));
         return primitivaGanadora;
+    }
+
+    public static void rellenarAmbas(int primitivaGanadora[], int apuesta[]) {
+        //Recorre desde el la posicion 0 hasta la ultima del array primitivaGanadora
+        for (int i = 0; i < primitivaGanadora.length; i++) {
+            int numeroAleatorio = (int) (Math.random() * 49);
+            int busquedaRepetidos = 0;
+            /* Comprobamos posicion por posicion que el numero no se encuentra 
+            en el propio array meidnate posicion por posicion, siendo igual a la
+            longitud del array cuando no se ha encontrado el numero que 
+            queremos comprobar*/
+            while (busquedaRepetidos < primitivaGanadora.length
+                    && primitivaGanadora[busquedaRepetidos] != numeroAleatorio) {
+                busquedaRepetidos++;
+            }
+            /*Comprobamos si el numero se encuentra, y si se encuentra */
+            if (busquedaRepetidos < primitivaGanadora.length) {
+                i--;
+            } else {
+                primitivaGanadora[i] = numeroAleatorio;
+            }
+        }
+
+        for (int i = 0; i < apuesta.length; i++) {
+            int numeroAleatorio = (int) (Math.random() * 49);
+            int busquedaRepetidos = 0;
+            /* Comprobamos posicion por posicion que el numero no se encuentra 
+            en el propio array meidnate posicion por posicion, siendo igual a la
+            longitud del array cuando no se ha encontrado el numero que 
+            queremos comprobar*/
+            while (busquedaRepetidos < apuesta.length
+                    && apuesta[busquedaRepetidos] != numeroAleatorio) {
+                busquedaRepetidos++;
+            }
+            /*Comprobamos si el numero se encuentra, y si se encuentra */
+            if (busquedaRepetidos < apuesta.length) {
+                i--;
+            } else {
+                apuesta[i] = numeroAleatorio;
+            }
+        }
+        /*Imprimimos el array de la primitiva ganadora para una mejor 
+        visualizacion y comprension del programa
+         */
+        Arrays.sort(apuesta);
+        System.out.println("        " + Arrays.toString(apuesta));
+
+    }
+
+    public static void milJugadas() {
+        int apuestaJugador[] = new int[6];
+        int primitivaGanadora[] = new int[apuestaJugador.length];
+        int jugadas = 1;
+        int AciertosTotales = 0;
+        for (int i = 1; i <= 100; i++) {
+            rellenarAmbas(primitivaGanadora, apuestaJugador);
+            int aciertos = primitiva(apuestaJugador, primitivaGanadora);
+            System.out.println("Aciertos jugada Nº:" + jugadas + ": " + aciertos);
+            AciertosTotales += aciertos;
+        }
+
+    }
+
+    public static void juego() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("      ---- ¿Que juego deseas realizar? ----");
+        System.out.println("---- 1º Juego de la primitiva Normal (opcion 1)    ----");
+        System.out.println("---- 2º Juego de la primitiva 1000 veces (opcion 2) ----");
+        int juego = sc.nextInt();
+        switch (juego) {
+            case 1 -> {
+                int apuestaJugador[] = new int[pedirLongitudPrimitiva()];
+                int primitivaGanadora[] = new int[apuestaJugador.length];
+                rellenarApuesta(apuestaJugador, primitivaGanadora);
+                System.out.print("\nNumeros de aciertos en la primitiva: " + primitiva(apuestaJugador, primitivaGanadora) + "\n");
+            }
+            case 2 -> milJugadas();
+            default -> throw new AssertionError();
+        }
     }
 
 }
