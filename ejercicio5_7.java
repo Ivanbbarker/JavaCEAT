@@ -17,7 +17,6 @@ public class ejercicio5_7 {
                 temporal[temporal.length - 1] = i;
             }
         }
-
         return temporal;
     }
 /* 
