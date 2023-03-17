@@ -14,10 +14,10 @@ se le genera automaticamente un numero de cuenta aleatorio compuesto por 7 numer
 
 > 4.  Consultar Saldo; opcion que consiste en la consulta del saldo del cliente una vez introducido su numero identificador (numero de cuenta) y este es correcto con los clientes que existen en la base de datos que se amplia en la primera opcion (Dar de alta).
 
-> 5.  Mostrar Datos(SOLO TRAAJADORES); consiste en la visualizacion de todos los usuarios dados de alta, mostrando todos y cada uno de los datos que componen a cada cliente. Este proceso al ser unicamente para los trabajadores de la entidad, se solicita un numero de trabajador compatible con los dados de alta (predefinido el numero "123456789" para mayor comodidad de la ejecución).
+> 5.  Mostrar Datos(SOLO TRABAJADORES); consiste en la visualizacion de todos los usuarios dados de alta, mostrando todos y cada uno de los datos que componen a cada cliente. Este proceso al ser unicamente para los trabajadores de la entidad, se solicita un numero de trabajador compatible con los dados de alta (predefinido el numero "123456789" para mayor comodidad de la ejecución).
 
 > 6.  Salir; consiste en la salida del programa final si no se desea realizar ninguna operacion más.
 
 ## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The `JAVA PROJECTS` view allows you to manage your dependencies.(https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
