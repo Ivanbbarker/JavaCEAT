@@ -1,4 +1,4 @@
-## Gestion Bancaria![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+## Gestion Bancaria                   ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 Programa de consola de Gestion de un Banco
 
@@ -19,5 +19,5 @@ se le genera automaticamente un numero de cuenta aleatorio compuesto por 7 numer
 > 6.  Salir; consiste en la salida del programa final si no se desea realizar ninguna operacion más.
 
 ## Dependency Management
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+   ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 The `JAVA PROJECTS` view allows you to manage your dependencies.(https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
