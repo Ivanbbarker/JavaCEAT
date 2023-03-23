@@ -31,7 +31,7 @@ public class Conjunto {
 
     public Boolean eliminarElemento(Integer elemento) {
         int indiceBusqueda = 0;
-        
+
         while (indiceBusqueda < con.length && con[indiceBusqueda] != elemento) {
             indiceBusqueda++;
         }
@@ -76,15 +76,18 @@ public class Conjunto {
     }
 
     public Boolean pertenece(Integer elemento) {
-        boolean pertenece = false;
+        int pertenece = 0;
         for (int i = 0; i < con.length; i++) {
             if (con[i] == elemento) {
-                pertenece = true;
-            } else {
-                pertenece = false;
+                pertenece++;
             }
         }
-        return pertenece;
+        if (pertenece == 1) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     public int perteneceIndice(Integer elemento) {
@@ -107,4 +110,77 @@ public class Conjunto {
         System.out.print("]\n");
     }
 
+    public boolean incluido(Conjunto c1, Conjunto c2) {
+        int objetivo;
+        boolean incluido = false;
+        if (c1.con.length > c2.con.length) {
+            objetivo = 0;
+            for (int i = 0; i < c2.con.length; i++) {
+                for (int j = 0; j < c1.con.length; j++) {
+                    if (c1.con[j] == c2.con[i]) {
+                        objetivo++;
+                    }
+                }
+            }
+            if (objetivo == c2.con.length) {
+                incluido = true;
+            }
+        } else {
+            objetivo = 0;
+            for (int i = 0; i < c1.con.length; i++) {
+                for (int j = 0; j < c2.con.length; j++) {
+                    if (c2.con[j] == c1.con[i]) {
+                        objetivo++;
+                    }
+                }
+            }
+            if (objetivo == c1.con.length) {
+                incluido = true;
+            }
+        }
+        return incluido;
+    }
+
+    public Conjunto union(Conjunto c1, Conjunto c2) {
+        Conjunto union = new Conjunto();
+        union.add(c1);
+        for (int i = 0; i < c2.con.length; i++) {
+            if (!union.pertenece(c2.con[i])) {
+                union.add(c2.con[i]);
+            }
+        }
+        return union;
+    }
+
+    public Conjunto interseccion(Conjunto c1, Conjunto c2) {
+        Conjunto interseccion = new Conjunto();
+        if (c1.con.length > c2.con.length) {
+            for (int i = 0; i < c1.con.length; i++) {
+                if (c1.pertenece(c2.con[i])) {
+                    interseccion.add(c2.con[i]);
+                }
+
+            }
+        } else {
+            for (int i = 0; i < c2.con.length; i++) {
+                if (c2.pertenece(c1.con[i])) {
+                    interseccion.add(c1.con[i]);
+                }
+            }
+        }
+        return interseccion;
+    }
+
+    public Conjunto diferencia(Conjunto c1, Conjunto c2) {
+        Conjunto diferencia = new Conjunto();
+        for (int i = 0; i < c1.con.length; i++) {
+            for (int j = 0; j < c2.con.length; j++) {
+                if (!c1.pertenece(c2.con[j])) {
+                    diferencia.add(c1.con[i]);
+                    break;
+                }
+            }
+        }
+        return diferencia;
+    }
 }
