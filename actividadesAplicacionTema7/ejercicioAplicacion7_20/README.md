@@ -8,7 +8,7 @@ Repite la Actividad de aplicacion 7.18, usando una Lista para guardar los elemen
 # Lista.java
 
 > **ATRIBUTOS**
-
+>
 > `public Integer[] tabla` : representa el array de Integers que a su vez representa la lista.
 
 > **METODOS**
@@ -25,7 +25,7 @@ Repite la Actividad de aplicacion 7.18, usando una Lista para guardar los elemen
 #ColaL.JAVA
 
 > **ATRIBUTOS**
-
+>
 > `public Lista listilla` : representa la lista donde vamos a simular el comportamiento de una cola
 
 > **METODOS**
