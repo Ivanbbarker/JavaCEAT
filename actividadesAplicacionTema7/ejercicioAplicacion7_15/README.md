@@ -3,7 +3,8 @@
 
 Diseña la calse Calendario que representa una fecha concreta(año, mes y dia).
 
-    Por simplicidad, solo tendremos en consideracion que existen meses con distinto numero de dias, pero no tendremos en        cuenta los años bisiestos.
+    Por simplicidad, solo tendremos en consideracion que existen meses con distinto numero de dias, 
+    pero no tendremos en cuenta los años bisiestos.
 
 ## Estructura y funcionamiento
 
