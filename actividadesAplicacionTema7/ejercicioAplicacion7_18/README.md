@@ -1,4 +1,4 @@
-## Ejercicio 7.11 MarcaPagina 
+## Ejercicio 7.18 Cola 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 Una cola es otra estructura dinamica como la pila. donde los elementos, en vez de apilarse y desapilarse, se encolan y desencolan. La diferencia con las pilas es que se desencola el primer elemento encolado, ya que así es como funcionan las colas del autobús o del cine. El primero que llega es el primero que sale de la cola (vamos a suponer que nadie se cuela). Por tanto, todos los elementos se encolan y desencolan en extremos opuestos de la estructura, llamados primero(el que está primero y será el próximo en abandonar la cola) y último (el que llegó último). Implementa la clase `Cola` , donde los elementos `Integer` encolados se guardan en una tabla
