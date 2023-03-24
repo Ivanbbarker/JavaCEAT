@@ -1,5 +1,5 @@
 ## Ejercicio 7.21 Conjuntos
-[Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 Un conjunto es una estructura dinámica de datos como la lista, con dos diferencias:
            
