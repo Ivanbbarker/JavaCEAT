@@ -4,7 +4,7 @@
 
 > Implementa una clase que permita resolver ecuaciones de segundo grado. Los coeficientes pueden indicarse en el constructor y modificarse a posteriori. Es fundamental que la clase disponga de un metodo que devuelva las distintas soluciones y de un metodo que nos informe si el discriminante es positivo.
 
-> **Soluciones de una ecuación de segundo grado**
+**Soluciones de una ecuación de segundo grado**
 
 Si queremos saber las posibles soluciones de la ecuación sin llegar a resolverla nos podemos fijar en el valor del radicando:
 
