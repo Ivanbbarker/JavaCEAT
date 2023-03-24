@@ -14,19 +14,23 @@ Se pide implementar la clase conjunto utilizando una lista para almacenar numero
 
 > **ATRIBUTOS**
 
-> `public int paginaLeida` : representa las paginas leidas que llevamos.
-> `public int paginaMax` : representa las paginas totales del libro.
-> `public int PaginasRestantes` : representan las paginas restantes que quedan en el libro.
+> `Integer [] con`: representa a la tabla donde se van a almacenar los elementos de los conjuntos.
 
 > **METODOS**
-
-> `public int incrementaPagina()` : su funcionalidad consiste en el incremento de las paginas que llevamos leidas de nuestro libro.
-
-> `public int gestUltimaPagina()` : su funcionalidad es simplemente devolver la ultima pagina que hemos leido.
-
-> `public int setPrincipio()` : funionalidad que hace volver a empezar el libro desde el principio, volviendo a 0, el atributo paginaLeida. Y volviendo al total de paginas el atributo PaginasRestantes.
-
-> `void mostrarInformacion()` : metodo que devuelve informacion que puede ser relevante a la hora de las comprobaciones del programa.
+>
+> `int numeroElementos()`: devuelve el numero de elementos del conjunto
+>
+> `boolean insertar(Integer nuevo): añade al conjunto `elemento`.
+>
+> `boolean insertar(Conjunto otroConjunto): añade al conjunto los elementos del conjunto `otro conjunto`.
+>
+> `boolean eliminarElemento(Integer elemento)`: en caso de pertenecer al conjunto, elimina `elemento`. 
+>
+> `boolean eliminarConjunto(Conjunto otroConjunto)`: elimina del conjunto invocante los elementos del conjunto que se pasa como parámetro. 
+>
+> `boolean pertenece(Integer elemento)` : indica si el elemento que se le pasa como parametro pertenece o no al conjunto.
+>
+> `void muestra()` : muestra el conjunto por consola.
 
 ## Dependencias
 
