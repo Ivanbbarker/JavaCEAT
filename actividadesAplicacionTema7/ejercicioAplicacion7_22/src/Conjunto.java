@@ -159,7 +159,6 @@ public class Conjunto {
                 if (c1.pertenece(c2.con[i])) {
                     interseccion.add(c2.con[i]);
                 }
-
             }
         } else {
             for (int i = 0; i < c2.con.length; i++) {
@@ -174,11 +173,14 @@ public class Conjunto {
     public Conjunto diferencia(Conjunto c1, Conjunto c2) {
         Conjunto diferencia = new Conjunto();
         for (int i = 0; i < c1.con.length; i++) {
+            int coincidendia = 0;
             for (int j = 0; j < c2.con.length; j++) {
-                if (!c1.pertenece(c2.con[j])) {
-                    diferencia.add(c1.con[i]);
-                    break;
+                if (c1.con[i] == c2.con[j]) {
+                    coincidendia++;
                 }
+            }
+            if (coincidendia == 0) {
+                diferencia.add(c1.con[i]);
             }
         }
         return diferencia;
