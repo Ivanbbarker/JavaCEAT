@@ -12,7 +12,7 @@ Si queremos saber las posibles soluciones de la ecuación sin llegar a resolverl
 
             - Si >0, es decir, si b 2– 4ac es positivo, hay dos soluciones reales y distintas.
 
-            º- Si = 0, es decir, si b 2– 4ac es cero, tiene una solución.
+            - Si = 0, es decir, si b 2– 4ac es cero, tiene una solución.
 
             - Si <0, es decir, si b 2– 4ac es negativo, no tiene solución
 
