@@ -8,9 +8,7 @@ Escribe la clase MarcaPagina, que ayuda a llevar el control de la lectura de un 
 > **ATRIBUTOS**
 
 > `public int paginaLeida` : representa las paginas leidas que llevamos.
-
 > `public int paginaMax` : representa las paginas totales del libro.
-
 > `public int PaginasRestantes` : representan las paginas restantes que quedan en el libro.
 
 > **METODOS**
