@@ -1,5 +1,5 @@
 ## Ejercicio 7.11 MarcaPagina 
-[Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 Escribe la clase MarcaPagina, que ayuda a llevar el control de la lectura de un libro. Deberá disponer de métodos para incrementar la pagina leida, para obtener informacion de la ultima pagina leida
 
