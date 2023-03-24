@@ -21,11 +21,11 @@ Si queremos saber las posibles soluciones de la ecuación sin llegar a resolverl
 
 > **ATRIBUTOS**
 
-> `public double A` : representa el coeficiente A de una ecuacion de segundo grado.
+        > `public double A` : representa el coeficiente A de una ecuacion de segundo grado.
 
-> `public double B` : representa el coeficiente B de una ecuacion de segundo grado.
+        > `public double B` : representa el coeficiente B de una ecuacion de segundo grado.
 
-> `public double C` : representa el coeficiente C de una ecuacion de segundo grado.
+        > `public double C` : representa el coeficiente C de una ecuacion de segundo grado.
 
 
 > **METODOS**
