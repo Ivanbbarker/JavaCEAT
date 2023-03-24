@@ -1,7 +1,7 @@
 ## Ejercicio 7.15 Calendario
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
-Diseña la calse Calendario que representa una fecha concreta(año, mes y dia).
+Diseña la clase Calendario que representa una fecha concreta(año, mes y dia).
 
     Por simplicidad, solo tendremos en consideracion que existen meses con distinto numero de dias, 
     pero no tendremos en cuenta los años bisiestos.
