@@ -1,50 +1,28 @@
-## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-### General Info
-***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
-## Technologies
-***
-A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+## Ejercicio 7.11 MarcaPagina 
+[Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
+Escribe la clase MarcaPagina, que ayuda a llevar el control de la lectura de un libro. Deberá disponer de métodos para incrementar la pagina leida, para obtener informacion de la ultima pagina leida
+
+## Estructura y funcionamiento
+
+> **ATRIBUTOS**
+
+> `public int paginaLeida` : representa las paginas leidas que llevamos.
+> `public int paginaMax` : representa las paginas totales del libro.
+> `public int PaginasRestantes` : representan las paginas restantes que quedan en el libro.
+
+> **METODOS**
+
+> `public int incrementaPagina()` : su funcionalidad consiste en el incremento de las paginas que llevamos leidas de nuestro libro.
+
+> `public int gestUltimaPagina()` : su funcionalidad es simplemente devolver la ultima pagina que hemos leido.
+
+> `public int setPrincipio()` : funionalidad que hace volver a empezar el libro desde el principio, volviendo a 0, el atributo paginaLeida. Y volviendo al total de paginas el atributo PaginasRestantes.
+
+> `void mostrarInformacion()` : metodo que devuelve informacion que puede ser relevante a la hora de las comprobaciones del programa.
+
+## Dependencias
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
