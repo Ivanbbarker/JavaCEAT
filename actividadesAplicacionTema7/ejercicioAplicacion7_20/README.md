@@ -3,9 +3,9 @@
 
 Repite la Actividad de aplicacion 7.18, usando una Lista para guardar los elementos encolados
 
-### Estructura y funcionamiento
+## Estructura y funcionamiento
 
-# Lista.java
+### Lista.java
 
 > **ATRIBUTOS**
 >
@@ -22,7 +22,7 @@ Repite la Actividad de aplicacion 7.18, usando una Lista para guardar los elemen
 > `public int numeroElementos()` : devuelve el numero de elementos que tiene la lista.  
 >
 
-#ColaL.JAVA
+###ColaL.JAVA
 
 > **ATRIBUTOS**
 >
