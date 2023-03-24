@@ -1,4 +1,4 @@
-## Ejercicio 7.11 MarcaPagina 
+## Ejercicio 7.19 Pila
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 Implementa la clase `Pila` para numeros `Integer`, usando directamente una tabla para guardar los elementos apilados
@@ -7,19 +7,22 @@ Implementa la clase `Pila` para numeros `Integer`, usando directamente una tabla
 
 > **ATRIBUTOS**
 
-> `public int pila[]` : representa las paginas leidas que llevamos.
-> `public int paginaMax` : representa las paginas totales del libro.
-> `public int PaginasRestantes` : representan las paginas restantes que quedan en el libro.
+> `public int pila[]` : representa la pila.
+>
+> `public int top` : representa el ultimo elemento de la pila.
+>
+> `public int capacidad` : representan la longitud de la pila.
 
 > **METODOS**
-
-> `public int incrementaPagina()` : su funcionalidad consiste en el incremento de las paginas que llevamos leidas de nuestro libro.
-
-> `public int gestUltimaPagina()` : su funcionalidad es simplemente devolver la ultima pagina que hemos leido.
-
-> `public int setPrincipio()` : funionalidad que hace volver a empezar el libro desde el principio, volviendo a 0, el atributo paginaLeida. Y volviendo al total de paginas el atributo PaginasRestantes.
-
-> `void mostrarInformacion()` : metodo que devuelve informacion que puede ser relevante a la hora de las comprobaciones del programa.
+>
+> `public boolean isEmpty()` : este metodo devuelve true si la pila se encuentra vacia.
+>
+> `public boolean isFull()` : este metodo devuelve true si la pila se encuentra llena.
+>
+> `public void push(int elemento)` : este metodo mete al principio de la pila el elemento pasado por parametro. 
+>
+> `public int pop()` : este metodo devuelve el primer elemento de la pila.  
+>
 
 ## Dependencias
 
