@@ -6,20 +6,20 @@ Escribe la clase Punto que representa un punto en el plano (con un componente x 
 ## Estructura y funcionamiento
 
 > **ATRIBUTOS**
-
+>
 > `double x`: representa la cordenada x en el plano
 >
 > `double y` : representa la cordenada y en el plano
 
 > **METODOS**
-
-> `public int incrementaPagina()` : su funcionalidad consiste en el incremento de las paginas que llevamos leidas de nuestro libro.
-
-> `public int gestUltimaPagina()` : su funcionalidad es simplemente devolver la ultima pagina que hemos leido.
-
-> `public int setPrincipio()` : funionalidad que hace volver a empezar el libro desde el principio, volviendo a 0, el atributo paginaLeida. Y volviendo al total de paginas el atributo PaginasRestantes.
-
-> `void mostrarInformacion()` : metodo que devuelve informacion que puede ser relevante a la hora de las comprobaciones del programa.
+>
+> `public void desplazar(double dx, double dy)` : su funcionalidad consiste en la suma/resta de las cordenadas donde se encontraba nuestro punto inicialmente e incrementarlas/decrementarlas, depende de los aprametros pasados al metodo.
+>
+> `public void desplazarX()` : su funcionalizad consiste en el desplazamiento del punto en la cordenada X.
+>
+> `public void desplazarY()` : su funcionalizad consiste en el desplazamiento del punto en la cordenada Y.
+>
+> `public double distanciaEuclidea()` : metodo que devuelve la distancia euclidea de entre el punto existente y el siguiente que le pasamos por parametro.
 
 ## Dependencias
 
