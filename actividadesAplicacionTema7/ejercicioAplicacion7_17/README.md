@@ -18,9 +18,9 @@ El cifrado Cesar es una forma sencilla de modificar un texto para que no sea ent
 
 > **METODOS**
 >
-> `public String cifrado(String cadenaOriginal)` : su funcionalidad consiste en el cifrado del mensaje mediante el valor de las letras en codigo ASCCI, teniendo en cuenta las Mayúsculas, moviendolas las posiciones definidas en el objeto como `desplazamiento`.
+> 1. `public String cifrado(String cadenaOriginal)` : su funcionalidad consiste en el cifrado del mensaje mediante el valor de las letras en codigo ASCCI, teniendo en cuenta las Mayúsculas, moviendolas las posiciones definidas en el objeto como `desplazamiento`.
 >
-> `public String cifradoInverso(String cadenaOriginal)` : su funcionamiento es es el mismo que el metodo `cifrado(String cadenaOriginal)`, pero con la peculiaridad de que es el procedimiento inverso al del metodo citado.
+> 2. `public String cifradoInverso(String cadenaOriginal)` : su funcionamiento es es el mismo que el metodo `cifrado(String cadenaOriginal)`, pero con la peculiaridad de que es el procedimiento inverso al del metodo citado.
 
 ## Dependencias
 
