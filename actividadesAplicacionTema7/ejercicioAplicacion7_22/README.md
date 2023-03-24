@@ -1,4 +1,4 @@
-## Enunciado (Extension 7.21)
+## Enunciado (Extension 7.21) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
 Añade a la clase Conjunto del ejercicio 7.22 los siguientes metodos.
 
@@ -19,3 +19,4 @@ Añadimos estas clases a la clase Conjunto, realizada en el ejercicio previo.
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
