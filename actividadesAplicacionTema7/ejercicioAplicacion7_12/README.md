@@ -8,13 +8,13 @@
 
 Si queremos saber las posibles soluciones de la ecuación sin llegar a resolverla nos podemos fijar en el valor del radicando:
 
-            D=b 2– 4ac (discriminante)
+        D=b 2– 4ac (discriminante)
 
-- Si >0, es decir, si b 2– 4ac es positivo, hay dos soluciones reales y distintas.
+            - Si >0, es decir, si b 2– 4ac es positivo, hay dos soluciones reales y distintas.
 
-- Si = 0, es decir, si b 2– 4ac es cero, tiene una solución.
+            º- Si = 0, es decir, si b 2– 4ac es cero, tiene una solución.
 
-- Si <0, es decir, si b 2– 4ac es negativo, no tiene solución
+            - Si <0, es decir, si b 2– 4ac es negativo, no tiene solución
 
 
 ## Estructura y funcionamiento
