@@ -8,9 +8,9 @@ Una cola es otra estructura dinamica como la pila. donde los elementos, en vez d
 > **ATRIBUTOS**
 
 > `public int cola[]` : representa la cola.
-
+>
 > `public int ultimo` : representa el ultimo elemento de la cola.
-
+>
 > `public int capacidad` : representan la longitud de la cola.
 
 > **METODOS**
