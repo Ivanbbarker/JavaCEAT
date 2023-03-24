@@ -1,8 +1,9 @@
-## Getting Started
+## Ejercicio 7.11 MarcaPagina [Star](https://img.shields.io/github/stars/tterb/playmusic.svg?style=social&label=Star)
+[Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Escribe la clase MarcaPagina, que ayuda a llevar el control de la lectura de un libro. Deberá disponer de métodos para incrementar la pagina leida, para obtener informacion de la ultima pagina leida
 
-## Folder Structure
+## Estructura y funcionamiento
 
 The workspace contains two folders by default, where:
 
@@ -16,3 +17,5 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
