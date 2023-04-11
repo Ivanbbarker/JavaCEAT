@@ -13,6 +13,7 @@ public class App {
         FileInputStream flujo = null;
         Scanner sc = new Scanner(System.in);
         String[] firmas = new String[0];
+        String firma;
         try {
 
             BufferedReader br = new BufferedReader(new FileReader("firmas.txt"));
@@ -20,18 +21,24 @@ public class App {
             while (sc.hasNext()) {
                 String firmados = sc.next();
                 firmas = Arrays.copyOf(firmas, firmas.length + 1);
-                firmas[firmas.length - 1] = firmados;
+                firmas[firmas.length - 1] = firmados.toLowerCase();
             }
             System.out.println(Arrays.toString(firmas));
             // ESCRIBE LOS DATOS CORRESPONDIENTES
-            escritura = new BufferedWriter(new FileWriter("firmas.txt", true));
-            sc = new Scanner(System.in);
-            String firma = pedirDatos(sc);
-            escritura.write(firma);
-            escritura.newLine();
-            // COMPROBAMOS SI LOS DATOS YA CORRESPONDEN AL LIBRO
-            
 
+            // COMPROBAMOS SI LOS DATOS YA CORRESPONDEN AL LIBRO
+
+            System.out.println(existeFirma(firmas, "ivan"));
+            do {
+                escritura = new BufferedWriter(new FileWriter("firmas.txt", true));
+                sc = new Scanner(System.in);
+                firma = pedirDatos(sc);
+                escritura.write(firma);
+                escritura.newLine();
+                if (existeFirma(firmas, firma.toLowerCase())) {
+                    System.out.println("FIRMA ENCONTRADA, INTRODUCE UNA VALIDA");
+                }
+            } while (existeFirma(firmas, firma.toLowerCase()));
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
@@ -46,9 +53,13 @@ public class App {
         }
     }
 
-    public static boolean existeFirma() {
+    public static boolean existeFirma(String[] firmas, String firmados) {
         boolean existe = false;
-
+        for (int i = 0; i < firmas.length; i++) {
+            if (firmas[i].equals(firmados)) {
+                existe = true;
+            }
+        }
         return existe;
     }
 
