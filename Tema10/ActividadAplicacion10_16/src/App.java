@@ -20,16 +20,18 @@ public class App {
             while (sc.hasNext()) {
                 String firmados = sc.next();
                 firmas = Arrays.copyOf(firmas, firmas.length + 1);
-                System.arraycopy(firmas, 0, firmas, 1, firmas.length - 1);
                 firmas[firmas.length - 1] = firmados;
             }
             System.out.println(Arrays.toString(firmas));
             // ESCRIBE LOS DATOS CORRESPONDIENTES
             escritura = new BufferedWriter(new FileWriter("firmas.txt", true));
+            sc = new Scanner(System.in);
             String firma = pedirDatos(sc);
             escritura.write(firma);
             escritura.newLine();
             // COMPROBAMOS SI LOS DATOS YA CORRESPONDEN AL LIBRO
+            
+
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
