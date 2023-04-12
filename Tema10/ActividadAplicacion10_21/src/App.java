@@ -12,33 +12,33 @@ public class App {
         BufferedWriter escritura = null;
         FileInputStream flujo = null;
         Scanner sc = new Scanner(System.in);
-        String[] firmas = new String[0];
-        String firma;
+        String[] numeros = new String[0];
+        String numero;
         try {
 
-            BufferedReader br = new BufferedReader(new FileReader("firmas.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("agendar.txt"));
             sc = new Scanner(br);
             while (sc.hasNext()) {
-                String firmados = sc.next();
-                firmas = Arrays.copyOf(firmas, firmas.length + 1);
-                firmas[firmas.length - 1] = firmados.toLowerCase();
+                String firmados = sc.nextLine();
+                numeros = Arrays.copyOf(numeros, numeros.length + 1);
+                numeros[numeros.length - 1] = firmados.toLowerCase();
             }
-            System.out.println(Arrays.toString(firmas));
+            System.out.println(Arrays.toString(numeros));
             // ESCRIBE LOS DATOS CORRESPONDIENTES
 
             // COMPROBAMOS SI LOS DATOS YA CORRESPONDEN AL LIBRO
 
-            System.out.println(existeFirma(firmas, "ivan"));
+            System.out.println(existeFirma(numeros, "ivan"));
             do {
-                escritura = new BufferedWriter(new FileWriter("firmas.txt", true));
+                escritura = new BufferedWriter(new FileWriter("agenda.txt", true));
                 sc = new Scanner(System.in);
-                firma = pedirDatos(sc);
-                escritura.write(firma);
+                numero = pedirDatos(sc);
+                escritura.write(numero);
                 escritura.newLine();
-                if (existeFirma(firmas, firma.toLowerCase())) {
+                if (existeFirma(numeros, numero.toLowerCase())) {
                     System.out.println("Esa firma ya se encuentra en el libro, introduce una válida.");
                 }
-            } while (existeFirma(firmas, firma.toLowerCase()));
+            } while (existeFirma(numeros, numero.toLowerCase()));
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
@@ -53,10 +53,10 @@ public class App {
         }
     }
 
-    public static boolean existeFirma(String[] firmas, String firmados) {
+    public static boolean existeFirma(String[] numeros, String numeroNuevo) {
         boolean existe = false;
-        for (int i = 0; i < firmas.length; i++) {
-            if (firmas[i].equals(firmados)) {
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i].equals(numeroNuevo)) {
                 existe = true;
             }
         }
@@ -65,8 +65,7 @@ public class App {
 
     public static String pedirDatos(Scanner sc) {
         System.out.print("Introduce el nombre de tu firma: ");
-        String firma = sc.nextLine();
-        return firma;
+        String numero = sc.nextLine();
+        return numero;
     }
-
 }
